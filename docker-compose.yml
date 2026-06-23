@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file:
-      - .env
+      - stack.env
     volumes:
       - "./db:/app/db"
       - "./templates/index.html:${INDEX_PATH}"
